@@ -1,6 +1,6 @@
-# Widget
+# Project Name
 
-Test task for FE dev.
+Short description or purpose of the project.
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@ git clone https://github.com/yourusername/projectname.git
 2. Navigate to the project directory:
 
 ```bash
-cd widget-tags
+cd projectname
 ```
 
 3. Install dependencies:

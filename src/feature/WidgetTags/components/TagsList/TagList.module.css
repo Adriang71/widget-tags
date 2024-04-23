@@ -22,3 +22,11 @@
 .tagList li svg {
   cursor: pointer;
 }
+
+.tagList button {
+  border: none;
+  padding: 0px;
+  display: flex;
+  margin-left: 5px;
+  cursor: pointer;
+}

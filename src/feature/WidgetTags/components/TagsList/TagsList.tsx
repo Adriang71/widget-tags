@@ -1,3 +1,4 @@
+import React from "react";
 import { IoMdClose } from "react-icons/io";
 import { tags } from "types";
 import style from "./TagList.module.css";
@@ -17,10 +18,12 @@ export const TagsList = ({ tags, setTags }: TagListProps) => {
       {tags.map((tag) => (
         <li key={tag.id}>
           {tag.name}{" "}
-          <IoMdClose
+          <button
             data-testid="tags-list-close-item"
             onClick={() => handleRemove(tag.id)}
-          />
+          >
+            <IoMdClose />
+          </button>
         </li>
       ))}
     </div>

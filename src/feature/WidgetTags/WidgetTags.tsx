@@ -23,7 +23,7 @@ export const WidgetTags = () => {
           </div>
         </div>
 
-        <SearchTags setTags={setTags} />
+        <SearchTags tags={tags} setTags={setTags} />
 
         {tags.length !== 0 && (
           <>

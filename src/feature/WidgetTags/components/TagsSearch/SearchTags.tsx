@@ -1,3 +1,4 @@
+import React from "react";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { useState } from "react";
 import { tags } from "types";
@@ -18,13 +19,23 @@ const mockTags: tags[] = [
 ];
 
 type SearchTagsProps = {
+  tags: tags[];
   setTags: React.Dispatch<React.SetStateAction<tags[]>>;
 };
 
-export const SearchTags = ({ setTags }: SearchTagsProps) => {
+export const SearchTags = ({ tags, setTags }: SearchTagsProps) => {
   const [searchTagText, setSearchTagText] = useState("");
   const [showDropdown, setShowDropdown] = useState(false);
   const [dropdownTags, setDropdownTags] = useState(mockTags);
+
+  const openDropdown = () => {
+    const ids = new Set(tags.map((d) => d.id));
+    const checkedTags = dropdownTags.map((tag) =>
+      ids.has(tag.id) ? { ...tag, checked: true } : { ...tag, checked: false }
+    );
+    setDropdownTags(checkedTags);
+    setShowDropdown(!showDropdown);
+  };
 
   const handleCheckbox = (
     e: React.ChangeEvent<HTMLInputElement>,
@@ -44,7 +55,7 @@ export const SearchTags = ({ setTags }: SearchTagsProps) => {
         <input
           data-testid="search-input"
           value={searchTagText}
-          onClick={() => setShowDropdown(!showDropdown)}
+          onClick={openDropdown}
           onChange={(e) => {
             setSearchTagText(e.target.value);
           }}

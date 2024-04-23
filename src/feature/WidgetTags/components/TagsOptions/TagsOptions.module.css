@@ -1,0 +1,26 @@
+.tagsOptions {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.tagsOptions li {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.tagsOptions li:first-child {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: rgb(179, 179, 179);
+}
+.tagsOptions li:first-child svg {
+  fill: rgb(179, 179, 179);
+}
+
+.tagsOptions li svg {
+  font-size: 18px;
+  margin-right: 5px;
+  position: relative;
+  top: 4px;
+  fill: rgb(177, 130, 214);
+}

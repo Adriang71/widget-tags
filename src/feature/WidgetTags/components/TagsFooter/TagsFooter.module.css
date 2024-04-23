@@ -1,0 +1,41 @@
+.tagsRating {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  color: rgb(250, 110, 110);
+}
+
+.tagsRating ul {
+  display: flex;
+  margin-left: 10px;
+}
+
+.tagsRating ul li {
+  width: 10px;
+  height: 5px;
+  border-radius: 2px;
+  display: block;
+  margin-right: 5px;
+  background-color: rgb(250, 110, 110);
+}
+
+.tagsRating ul li:nth-child(4),
+.tagsRating ul li:nth-child(5) {
+  background-color: rgb(204, 204, 204);
+}
+
+.tagsInfo {
+  display: flex;
+  align-items: center;
+}
+
+.tagsInfo svg {
+  font-size: 32px;
+  fill: rgb(162, 162, 162);
+}
+
+.tagsInfo p {
+  font-size: 14px;
+  text-align: left;
+  margin-left: 10px;
+}

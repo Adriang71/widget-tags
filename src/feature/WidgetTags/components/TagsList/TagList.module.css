@@ -1,0 +1,24 @@
+.tagList {
+  margin: 20px 0;
+  padding: 0;
+  display: flex;
+  max-width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: flex-start;
+}
+
+.tagList li {
+  display: flex;
+  padding: 4px 8px;
+  border: 1px solid #242424;
+  margin: 5px;
+  font-size: 12px;
+  border-radius: 6px;
+  align-items: center;
+}
+
+.tagList li svg {
+  cursor: pointer;
+}

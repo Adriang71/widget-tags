@@ -1,0 +1,30 @@
+.widgetCard {
+  min-height: 380px;
+  padding: 20px 15px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  width: 320px;
+  position: relative;
+  background-color: #fff;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: #4d4d4d;
+  background-image: linear-gradient(to right, #e4e4e4, #9f9f9f, #e4e4e4);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h4 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.closeWidget {
+  cursor: pointer;
+}

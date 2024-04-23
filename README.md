@@ -1,4 +1,4 @@
-# Project Name
+# widget-tags
 
 Short description or purpose of the project.
 
@@ -15,13 +15,13 @@ Short description or purpose of the project.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/projectname.git
+git clone https://github.com/yourusername/widget-tags.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd projectname
+cd widget-tags
 ```
 
 3. Install dependencies:
@@ -43,7 +43,7 @@ npm run dev
 ## Folder Structure
 
 ```
-projectname/
+widget-tags/
 │
 ├── public/           # Static assets
 │   ├── index.html    # Main HTML file

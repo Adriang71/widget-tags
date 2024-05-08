@@ -12,9 +12,10 @@ import style from "./WidgetTags.module.css";
 
 export const WidgetTags = () => {
   const [tags, setTags] = useState<tags[]>([]);
-
+  const SuperDuperComponent = () => <div>aaaaa</div>
   return (
     <>
+      <SuperDuperComponent/>
       <div className={style.widgetCard}>
         <div className={style.header}>
           <h4>Tagi</h4>
